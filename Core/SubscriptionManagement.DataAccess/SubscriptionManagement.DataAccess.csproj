@@ -1,0 +1,78 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200903140847_Initial.cs" />
+    <Compile Remove="Migrations\20200903140847_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903140956_Initial.cs" />
+    <Compile Remove="Migrations\20200903140956_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903141743_Initial.cs" />
+    <Compile Remove="Migrations\20200903141743_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903141929_Initial.cs" />
+    <Compile Remove="Migrations\20200903141929_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903144604_Initial.cs" />
+    <Compile Remove="Migrations\20200903144604_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903144839_Initial.cs" />
+    <Compile Remove="Migrations\20200903144839_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903145357_Initial.cs" />
+    <Compile Remove="Migrations\20200903145357_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200903145740_Initial.cs" />
+    <Compile Remove="Migrations\20200903145740_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904084331_Initial.cs" />
+    <Compile Remove="Migrations\20200904084331_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904084606_Initial.cs" />
+    <Compile Remove="Migrations\20200904084606_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904084725_Initial.cs" />
+    <Compile Remove="Migrations\20200904084725_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904084943_Initial.cs" />
+    <Compile Remove="Migrations\20200904084943_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904085101_Initial.cs" />
+    <Compile Remove="Migrations\20200904085101_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904085429_Initial.cs" />
+    <Compile Remove="Migrations\20200904085429_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904085639_Initial.cs" />
+    <Compile Remove="Migrations\20200904085639_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200904091711_Initial.cs" />
+    <Compile Remove="Migrations\20200904091711_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905114300_Initial.cs" />
+    <Compile Remove="Migrations\20200905114300_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905114630_Initial.cs" />
+    <Compile Remove="Migrations\20200905114630_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905114926_Initial.cs" />
+    <Compile Remove="Migrations\20200905114926_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905115102_Initial.cs" />
+    <Compile Remove="Migrations\20200905115102_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905115148_Initial.cs" />
+    <Compile Remove="Migrations\20200905115148_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20200905132106_AddedPrice_To_book.cs" />
+    <Compile Remove="Migrations\20200905132106_AddedPrice_To_book.Designer.cs" />
+    <Compile Remove="Migrations\20200906172507_Provided_Reselling_Possilibity.cs" />
+    <Compile Remove="Migrations\20200906172507_Provided_Reselling_Possilibity.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.3" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.3">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="3.1.3" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="3.1.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SubscriptionManagement.Core\SubscriptionManagement.Core.csproj" />
+    <ProjectReference Include="..\SubscriptionManagement.DataContracts\SubscriptionManagement.DataContracts.csproj" />
+    <ProjectReference Include="..\SubscriptionManagement.Domains\SubscriptionManagement.Domains.csproj" />
+  </ItemGroup>
+
+</Project>
