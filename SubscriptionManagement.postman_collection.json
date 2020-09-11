@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a27cd10b-9575-46b6-baa8-52ff506c1f1f",
+		"name": "SubscriptionManagement",
+		"description": "The collection only contains getting access token endpoint.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET ACCESS TOKEN",
+			"request": {
+				"auth": {
+					"type": "basic",
+					"basic": [
+						{
+							"key": "username",
+							"value": "client",
+							"type": "string"
+						},
+						{
+							"key": "password",
+							"value": "secret",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "grant_type",
+							"value": "password",
+							"type": "text"
+						},
+						{
+							"key": "username",
+							"value": "javid@mail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "1234567",
+							"type": "text"
+						},
+						{
+							"key": "scope",
+							"value": "webApi",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://localhost:44343/connect/token",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44343",
+					"path": [
+						"connect",
+						"token"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
